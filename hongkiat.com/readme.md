@@ -1,0 +1,1 @@
+https://www.hongkiat.com/blog/css-snippets-for-designers/

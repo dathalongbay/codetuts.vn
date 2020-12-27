@@ -1,0 +1,1 @@
+https://css-tricks.com/snippets/php/php-zebra-striping-a-table/
