@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        * {
+            margin: 0; padding: 0;
+        }
+        .header-wrapper {
+            background-color: #fff;
+            height: 82px;
+            position: fixed;
+            width: 100%;
+            z-index: 11000;
+        }
+
+        .shadow-header {
+            box-shadow: 0 5px 15px -5px rgba(0,0,0,.75);
+        }
+
+        .header-wrapper .hdSpace {
+            height: 80px;
+            position: relative;
+            margin: 0 20px;
+            max-width: 100%;
+            background-color: transparent!important;
+            color: #fff;
+        }
+
+        .header-wrapper .hdSpace .zoro-header {
+            max-width: calc(100% - 40px);
+            height: 80px;
+            background-color: #fff;
+        }
+
+        .zoro-header>.logo {
+            pointer-events: auto;
+            text-decoration: none;
+            padding: 0;
+            display: inline-block;
+            vertical-align: middle;
+            cursor: pointer;
+            width: 140px;
+            height: 34px;
+        }
+
+        .zoro-header>.logo img {
+            width: 140px;
+            height: 40px;
+        }
+
+        .zoro-header>ul {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0;
+            padding: 0 4%;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+        }
+
+        .zoro-header>ul>li:first-child {
+            padding-left: 20px;
+        }
+        .zoro-header>ul>li {
+            display: inline-block;
+            padding: 0 20px;
+            line-height: 82px;
+            cursor: pointer;
+        }
+
+        .zoro-header>ul>li>a {
+            font-size: 16px;
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header-wrapper shadow-header">
+    <div class="hdSpace" role="header">
+        <div id="hdPinTarget" class="zoro-header head-opaque">
+            <a aria-label="VTVGiaiTri" class="logo" href="/">
+                <img src="https://www.vtvgiaitri.vn/assets/img/vtv_c.svg" width="114" height="53" alt="VTV Giải Trí"></a>
+            <ul role="navigation" class="main-nav">
+                <li class="browse"><a href="/xem-tivi-truc-tuyen/vtv3">Trực tuyến</a></li>
+                <li class="browse"><a target="" href="/genre/phim">Phim</a></li>
+                <li class="browse"><a target="" href="/genre/tv-show">TV Show</a></li>
+                <li class="browse"><a target="" href="https://www.vtvgiaitri.vn/thieu-nhi">Thiếu nhi</a></li>
+            </ul>
+            <div>
+                <div id="sidebar" class="bm-menu-wrap sidebar-menu"
+                     style="position: fixed; right: 0px; z-index: 1100; width: 30%; height: 100%; transform: translate3d(100%, 0px, 0px); transition: all 0.5s ease 0s;">
+                    <div class="bm-menu" style="height: 100%; box-sizing: border-box; overflow: auto;">
+                        <nav class="bm-item-list" style="height: 100%;">
+                            <ul style="display: block; outline: none;">
+                                <li><a class="" href="/">Trang chủ</a></li>
+                                <li><a>Đăng nhập</a></li>
+                                <li><a class="" href="/xem-tivi-truc-tuyen/vtv3">Trực tuyến</a></li>
+                                <li><a class="" target="" href="/genre/phim">Phim</a><span class="menu-arrow"><!-- react-text: 211 -->
+                                    <!-- /react-text --><!-- react-text: 212 -->&gt;<!-- /react-text -->
+                                    <!-- react-text: 213 --> <!-- /react-text --></span>
+                                    <ul class="sub-menu-list multi-column hidden">
+                                        <li class="sub-menu-item"><a class="sub-menu-link" target=""
+                                                                     href="/genre/phim-hai">Phim hài</a></li>
+                                        <li class="sub-menu-item"><a class="sub-menu-link" target=""
+                                                                     href="/genre/gia-dinh">Phim gia đình</a></li>
+                                        <li class="sub-menu-item"><a class="sub-menu-link" target=""
+                                                                     href="/genre/lang-man">Phim lãng mạn</a></li>
+                                        <li class="sub-menu-item"><a class="sub-menu-link" target=""
+                                                                     href="/genre/hinh-su">Phim hình sự - chính luận</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a class="" target="" href="/genre/tv-show">TV Show</a><span class="menu-arrow"><!-- react-text: 226 -->
+                                    <!-- /react-text --><!-- react-text: 227 -->&gt;<!-- /react-text -->
+                                    <!-- react-text: 228 --> <!-- /react-text --></span>
+                                    <ul class="sub-menu-list multi-column hidden">
+                                        <li class="sub-menu-item"><a class="sub-menu-link" target=""
+                                                                     href="/genre/hai-kich">Hài kịch</a></li>
+                                        <li class="sub-menu-item"><a class="sub-menu-link" target=""
+                                                                     href="/genre/am-nhac">Ca nhạc</a></li>
+                                        <li class="sub-menu-item"><a class="sub-menu-link" target=""
+                                                                     href="/genre/talk-show">Talk show</a></li>
+                                        <li class="sub-menu-item"><a class="sub-menu-link" target=""
+                                                                     href="/genre/game-show">Game show</a></li>
+                                        <li class="sub-menu-item"><a class="sub-menu-link" target=""
+                                                                     href="/genre/chuong-trinh-thuc-te">Truyền hình thực
+                                            tế</a></li>
+                                        <li class="sub-menu-item"><a class="sub-menu-link" target=""
+                                                                     href="/genre/chuong-trinh-thieu-nhi">Chương trình
+                                            thiếu nhi</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="" target="" href="https://www.vtvgiaitri.vn/thieu-nhi">Thiếu nhi</a><span
+                                        class="menu-arrow"><!-- react-text: 245 --> <!-- /react-text -->
+                                    <!-- react-text: 246 -->&gt;<!-- /react-text --><!-- react-text: 247 -->
+                                    <!-- /react-text --></span>
+                                    <ul class="sub-menu-list multi-column hidden">
+                                        <li class="sub-menu-item"><a class="sub-menu-link" target=""
+                                                                     href="/genre/chuong-trinh-thieu-nhi">Chương trình
+                                            thiếu nhi</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div>
+                        <div class="bm-cross-button"
+                             style="position: absolute; width: 24px; height: 24px; right: 8px; top: 8px;"><span
+                                style="position: absolute; top: 6px; right: 14px;"><span class="bm-cross"
+                                                                                         style="position: absolute; width: 3px; height: 14px; transform: rotate(45deg);"></span><span
+                                class="bm-cross"
+                                style="position: absolute; width: 3px; height: 14px; transform: rotate(-45deg);"></span></span>
+                            <button style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; margin: 0px; padding: 0px; border: none; text-indent: -9999px; background: transparent; outline: none; cursor: pointer;">
+                                Close Menu
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="bm-burger-button" style="z-index: 1000;"><span><span class="bm-burger-bars"
+                                                                                     style="position: absolute; height: 20%; left: 0px; right: 0px; top: 0%; opacity: 1;"></span><span
+                            class="bm-burger-bars"
+                            style="position: absolute; height: 20%; left: 0px; right: 0px; top: 40%; opacity: 1;"></span><span
+                            class="bm-burger-bars"
+                            style="position: absolute; height: 20%; left: 0px; right: 0px; top: 80%; opacity: 1;"></span></span>
+                        <button style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; margin: 0px; padding: 0px; border: none; opacity: 0; font-size: 8px; cursor: pointer;">
+                            Open Menu
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="secondary-nav">
+                <div class="nav-element search-button-wrapper">
+                    <div class="header-search-input"><input type="text" placeholder="Tìm kiếm..."
+                                                            data-search-input="true" dir="ltr" value=""><span
+                            class="search-bar-icon icon-search"></span></div>
+                </div>
+                <span class="authLinks non-loggedin">Đăng Nhập</span></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
